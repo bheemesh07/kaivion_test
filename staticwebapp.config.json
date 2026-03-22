@@ -1,7 +1,7 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/css/*", "/js/*", "/images/*", "*.svg", "*.ico", "*.png"]
+    "exclude": ["*.css", "*.js", "*.svg", "*.png", "*.ico"]
   },
   "responseOverrides": {
     "404": { "rewrite": "/index.html", "statusCode": 200 }
@@ -9,7 +9,6 @@
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
-    "X-XSS-Protection": "1; mode=block",
     "Cache-Control": "public, max-age=86400"
   }
 }
